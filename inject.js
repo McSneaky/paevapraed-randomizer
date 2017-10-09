@@ -1,12 +1,5 @@
 $('body').append(`
-  <div class='hurrdurr-selector modal modal-fade show' tabindex='-1' role='dialog' style="
-    background-color: red;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 999;
-  ">
+  <div class='hurrdurr-selector modal modal-fade show' tabindex='-1' role='dialog'>
     <div class='inputs-container modal-dialog' role='document'>
       <div class='modal-content'>
         <div class='modal-header'>Random!</div>
@@ -56,6 +49,14 @@ $('body').append(`
     <style>
       .random-border {
         border: 2px solid red;
+      }
+      .hurrdurr-selector {
+        background-color: red;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
       }
     </style>
   </div>
