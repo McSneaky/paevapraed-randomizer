@@ -16,7 +16,7 @@ $('body').append(`
         </div>
         <div class='modal-footer'>
           <button class='btn btn-primary' onclick='getRandom()'>Get more random!</button>
-          <button class='btn btn-default' data-dismiss='modal'>Close!</button>
+          <button class='btn btn-default' data-dismiss='modal' onclick='closeIt()'>Close!</button>
         </div>
       </div>
     <script>
@@ -44,6 +44,10 @@ $('body').append(`
         $('html,body').animate({
           scrollTop: $('#' + offer.id).offset().top
         });
+      }
+      
+      function closeIt() {
+        $('.hurrdurr-selector').remove();
       }
     </script>
     <style>
